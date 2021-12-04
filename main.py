@@ -53,16 +53,8 @@ def sales():
                 embed.set_timestamp()
 
                 embed.set_author(name='SolBot Sales')
-                if str('solanart') in str(source):
-                    embed.set_footer(text='Sale on Solanart', icon_url='https://cdn.discordapp.com/attachments/902716564963467326/902944236050214952/logoonly.png%27')
                 if str('magiceden') in str(source):
                     embed.set_footer(text='Sale on Magic Eden', icon_url='https://i.postimg.cc/j2TbqJ3x/favicon.png')
-                if str('digitaleyes') in str(source):
-                    embed.set_footer(text='Sale on Digital Eyes', icon_url='https://pbs.twimg.com/profile_images/1430306224713740292/q4termyJ.jpg%27')
-                if str('alphaart') in str(source):
-                    embed.set_footer(text='Sale on Alpha Art', icon_url='https://pbs.twimg.com/profile_images/1446936065051353094/WHXnvPkd_400x400.jpg%27')
-                if str('ftx') in str(source):
-                    embed.set_footer(text='Sale on FTX US', icon_url='https://cdn.discordapp.com/attachments/902716564963467326/903722456181784596/ftx-logo.png%27')
                 webhook.add_embed(embed)
                 webhook.execute()
                 break
