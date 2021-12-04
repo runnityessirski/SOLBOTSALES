@@ -47,7 +47,7 @@ def sales():
                 nft_data = json.loads(requests.get('https://api-mainnet.magiceden.io/rpc/getNFTByMintAddress/' + mint).text)
                 sale_price = str(sale['parsedTransaction']['total_amount']/1000000000)
                 source =  sale['source']
-                webhook = DiscordWebhook(url='https://discord.com/api/webhooks/916496092064010270/hzklfBh8Q4l89jAzZ5pvaYVaSYbW3J569OUahTi2x2rijG6FDeYCUkSKxQGuLrSrFamH')
+                webhook = DiscordWebhook(url='https://discord.com/api/webhooks/916511511030136943/VjICxP0xXV7WlhNas92fSEDsOFFik3xWG4JRnMEZcibWoLa_Kf-jDIDoUK6da4r9lpPs')
                 embed = DiscordEmbed(title='', description= 'Name - ' + str(nft_data['results']['title']) + '\nAmount - ' + str(sale_price) + ' SOL\n', color=00000)
                 embed.set_image(url=nft_data['results']['img'])
                 embed.set_timestamp()
